@@ -3,4 +3,4 @@ The project exemplifies various aspects of creating code that involve the operat
 
 The code shows learning mechanics for comment practices, proper indentation of code, and various other statements regarding coding in C++.
 
-I am very grateful you have chosen to view the repository. Take care, and have a great rest of your day!
+There were many other features explored in C++ which included inheritance, implementing Python and C++, and differences betweeen the languages. 
