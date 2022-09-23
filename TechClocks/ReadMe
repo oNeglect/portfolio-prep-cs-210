@@ -1,0 +1,3 @@
+Program that allows user to add one minute, one hour, and one second to the display console. 
+The display console shows two clocks, 12-hour and 24-hour clock.
+Program must handle appropriate inputs.
