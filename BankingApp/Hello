@@ -1,1 +1,16 @@
-fadsf
+Airgead Banking wants a screen to display with the 
+foloowing information
+
+Initial Investment Amount
+Monthly Deposit
+Annual Interest (compounded)
+Number of years
+
+Make sure static reports print, one showing year end
+balance, and the other showing year end earned 
+interest with and without additional monthly deposits
+
+Test for user input for total number of months,
+opening amount, deposited amount, and make sure 
+calculations are correct for the output.
+
