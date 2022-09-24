@@ -1,0 +1,72 @@
+#Import regular-expression operations and import common string operators
+import re
+import string
+    
+
+def ListPrint(fileContents):
+    #Opens file to read from
+    readFile = open('CS210_Project_Three_Input_File.txt','r')
+
+    #Reads file into variable data
+    fileData = readFile.read()
+
+    #Stores the number of times user input appears in file
+    itemQuantity = fileData.count(fileContents)
+
+    #print occurences of the specified item 
+    print(fileContents +  " " + str(itemQuantity))
+
+    #Closes file
+    readFile.close()
+
+    #return int value
+    return 100
+
+def PrintFrequency(userInput):
+    #Opens file to read from
+    readFile = open('CS210_Project_Three_Input_File.txt','r')
+    itemQuantity = 0
+
+    #For loop which iterates through file and compares string to each line in file
+    #If the string and the line in file are equal removing new lines and white space, then 
+    #set occurences to occurences plus one
+    for line in readFile:
+        if userInput == line.strip():
+            itemQuantity = itemQuantity + 1
+
+    #Closes file
+    readFile.close()
+
+    #Returns occurences within the file
+    return itemQuantity
+
+def PrintHistogram(a): 
+    #Declare Variables
+    itemList = []
+
+    #Creates the write file variable to use to write elements to the file
+    writeFile = open('frequency.dat', 'w')
+
+    #Opens file to which we can read from
+    readFile = open('CS210_Project_Three_Input_File.txt','r')
+
+    #Reads file into variable data
+    fileData = readFile.read()
+
+    #Returns to byte 0 in the file to reread
+    readFile.seek(0)
+
+    #Read from file and create a list of applicable items then write to .dat file item name and count of quantity
+    for line in readFile:
+        if line.split() not in itemList:
+            itemList.append(line.split())
+            writeFile.write(line.strip())
+            writeFile.write(" " + str(fileData.count(line)))
+            writeFile.write("\n")
+  
+    #Close all files
+    writeFile.close()
+    readFile.close()
+
+    #Returns abitrary number to exit function
+    return 100
