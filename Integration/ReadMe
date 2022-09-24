@@ -1,0 +1,6 @@
+Utilizes C++ and Python to read from a file, find the number of occurances within the file, and print the specific
+number of times that specific element is in the file.
+After you have counted the number of specified items, construct a histogram using the appropriate character (*)
+to signify how many times the string is found within the file.
+
+The program uses C++ to read the file and utilizes Python functions to construct the logic surrounding the program.
